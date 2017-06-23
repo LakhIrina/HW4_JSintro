@@ -46,7 +46,6 @@ function startGame(){
 
         //Start new game
         amount = amount * 2;
-
         console.log ("Ваш бонус становить ", amount, '$!' );
         console.log ("You start next game!");
     }
@@ -68,11 +67,9 @@ function game(gameNumber) //main function;
         if(choiceUser==pcChoice)
         {
             сurrentPrize = getCalculateCurrentPrize(gameNumber, tryNumber);
-            // console.log('You won', сurrentPrize, '$!');
             break;
         }
     }  //for
-    // console.log('Ваш виграш - 0$');
     return сurrentPrize;
 }; //game
 
